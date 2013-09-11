@@ -95,13 +95,30 @@ article section{
 
 
 
-
+a{
+	color:#cccccc;
+}
 nav a, body {
 	color: white;
 }
+a:active
+{
+outline: none;
+}
+
+a:focus
+{
+-moz-outline-style: none;
+}
+a::-moz-focus-inner{
+  border: 0;
+  border-style: none;
+  border-width: 0px;
+}
+
 
 body {
-	background: #cccccc;
+	background: black;
 	/*background-image: url('./../img/background.png');
 	position:absolute;
 	-webkit-background-size: cover;
