@@ -62,6 +62,9 @@ article {
 
 article section{
 	background-color: rgba(0, 0, 0, 0.5);
+
+	/*border-top: 2px solid #cccccc;*/
+	border: 2px solid #000000;
 	/*padding: 3%;*/
 }
 	div.floating-menu a {
