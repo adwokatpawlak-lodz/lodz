@@ -61,16 +61,19 @@ article {
 }
 
 article section{
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(255,255,255, 0.4);
+	color:black;
+	font-size: 24px;
 	
+	line-height: 36px;
 	/*border-top: 2px solid #cccccc;*/
 	/*border: 1px solid white;*/
 	/*padding: 3%;*/
 }
 	div.floating-menu a {
 		/*background-color: rgba(0,0,0, 0.3);*/
-		color:#eeeeee;
-		border-bottom: 2px solid #cccccc;
+		color:#444444;
+		border-bottom: 2px solid #333333;
 		font-weight:bold;
 		
 		transition: border-bottom color 500ms;
@@ -78,8 +81,8 @@ article section{
 	}
 	
 	div.floating-menu a:hover{
-		border-bottom: 2px solid #ffffff;
-		color:white;
+		border-bottom: 2px solid #000000;
+		color:#000000;
 		/*background-color: rgba(0,0,0, 1);*/
 	}
 	
@@ -99,7 +102,11 @@ a{
 	color:#cccccc;
 }
 nav a, body {
-	color: white;
+	color: #333333;
+}
+.title
+{
+	color:white;
 }
 a:active
 {
