@@ -157,46 +157,68 @@ small{
 	font-size:1.3em;
 }
 
-
+#simpleLink
+{
+	margin-top:230px;/*46 for option * 5*/
+	color:#cccccc;
+}
 
 .main article
 {
 	margin-top:400px;
 	margin-bottom:100px;/*for google translator snippet*/
 }
-/*.main-container
-{
-	height: 50%;
-	width: 50%;
-	position: absolute;
-	margin: auto;
-	top: 0; left: 0; bottom: 0; right: 0;
-}*/
 
 
+/*scroll menu for mobile*/
   	div.floating-menu {
 		padding-top:0px;
 		width: 100%;
-		/*height: 100px;*/
-		position: static;
-				
+		position: fixed;
+		top:0px;
+		background-color: rgba(0,0,0, 0.2);	
 		z-index: 100;
-		
-}
-
-	div.floating-menu a {
+	}
+	div.floating-menu li {
 		display: block;
 		text-decoration: none;
-		padding:0px;
-		
-		float:left;
-		width: 100%;
-		padding:10px;
-		text-align: center;
-		border-bottom: 1px solid #000000;
-		
 
+		width: 100%;
+		text-align: center;
 	}
+	div.floating-menu ul{
+		padding: 0;
+		margin:0;
+	}
+	
+	.floating-menu a{
+		font-weight:bold;
+		text-decoration:none;
+		display:block;/*to cover all li surface*/
+		padding:10px;
+	}
+	/*scroll menu :hover animations*/
+	div.floating-menu li {
+		border-bottom: 2px solid #cccccc;
+		
+		transition: border-bottom 500ms;
+		-webkit-transition: border-bottom 500ms;
+	}
+	div.floating-menu a{
+		color:#cccccc;
+		
+		transition: border-bottom 500ms;
+		-webkit-transition: border-bottom 500ms;
+	}
+	
+	div.floating-menu li:hover{
+		border-bottom: 2px solid #ffffff;
+	}
+	div.floating-menu a:hover{
+		color:white;
+	}
+	
+
 	
 
 
@@ -312,39 +334,45 @@ body{
     WIDE: Main
    ============ */
   	div.floating-menu {
-		padding-top:0px;
-		
+  		background-color:rgba(0,0,0, 0.0);
 		position: fixed;
 		right: 0;
 		
 		width: 160px;
-		z-index: 100;
-		
-		
-
 	}
 	
 
-
-	div.floating-menu a {
+/*scroll menu*/
+	div.floating-menu li {
 		position:relative;
+
 		display: block;
-		text-decoration: none;
 		padding:15px;
 		padding-top:35px;
-		/*margin-bottom:20px;*/
+
 		width:110px;
-		border-bottom: none;
 		text-align:right;
 		
 		transition: right 200ms;
 		-webkit-transition: right 200ms;
 	}
 	
-	div.floating-menu a:hover
+	div.floating-menu li:hover
 	{
 		right:10px;
 	}
+	
+	div.floating-menu .active {
+		border-bottom: 2px solid #ffffff;
+	}
+	
+	div.floating-menu  .active a {
+		color:white;
+	}
+
+
+
+
 
     .main article {    	
     	/*margin-left:auto;

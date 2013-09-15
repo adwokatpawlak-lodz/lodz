@@ -23,5 +23,10 @@ $('div.floating-menu a').click(function() {
 // });
 
 $(document).ready(function() {
-   $('.scroll-menu').localScroll({duration:1000});
+   //$('.scroll-menu').localScroll({duration:1000});
+   
+   // initiate page scroller plugin
+	$('body').pageScroller({
+			navigation: '.scroll-menu'
+	});
 });

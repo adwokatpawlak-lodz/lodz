@@ -79,32 +79,8 @@ article section{
 	/*border: 1px solid white;*/
 	/*padding: 3%;*/
 }
-	div.floating-menu a {
-		/*background-color: rgba(0,0,0, 0.3);*/
-		color:#eeeeee;
-		border-bottom: 2px solid #dddddd;
-		font-weight:bold;
-		
-		transition: border-bottom color 500ms;
-		-webkit-transition: border color 500ms;
-	}
-	
-	div.floating-menu a:hover{
-		border-bottom: 2px solid #ffffff;
-		color:#ffffff;
-		/*background-color: rgba(0,0,0, 1);*/
-	}
-	
-	
-	
 
-
-
-
-a{
-	color:#333333;
-}
-nav a, body {
+body {
 	color: #eeeeee;
 }
 .title
