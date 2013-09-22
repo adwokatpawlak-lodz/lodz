@@ -165,8 +165,8 @@ small{
 
 .main article
 {
-	margin-top:400px;
-	margin-bottom:100px;/*for google translator snippet*/
+	/*margin-top:400px;*/
+	/*margin-bottom:100px;/*for google translator snippet*/*/
 }
 
 
@@ -176,7 +176,7 @@ small{
 		width: 100%;
 		position: fixed;
 		top:0px;
-		background-color: rgba(0,0,0, 0.2);	
+		background-color: rgba(0,0,0, 1.0);	
 		z-index: 100;
 	}
 	div.floating-menu li {
@@ -226,7 +226,7 @@ article section
 {
 	width: 90%;
 	padding: 3%;
-	margin: 20% 2%;
+	margin: 0 2%;
 	margin-top:0px;
 }
 
@@ -238,7 +238,11 @@ h1
 
 .header-container
 {
-	margin-top:550px
+	margin-top:550px;
+	margin-bottom:400px;
+}
+.main-container{
+	margin-bottom:200px;
 }
 header
 {
@@ -283,18 +287,6 @@ body{
     
 
 
-
-
-    /*sum to 81%*/
-    /*nav .first
-    {
-    	width:35%;
-    }
-    nav .second,
-    nav .third{
-    	width:23%
-    }*/
-
     nav li:first-child a {
         margin-left: 0;
     }
@@ -322,13 +314,7 @@ body{
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-/*turn off blocks shadows*/
-    /*.header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }*/
+
 
 /* ============
     WIDE: Main
