@@ -38,14 +38,18 @@ article h2 {
   .main-container{
 	background-color:#27273D;
 	}
+	.footer-container{
+		/*background-color:#27273D;*/
+		color:white;
+	}
 }
 
 article section{
 	/*background-color: rgba(0,0,0, 1.0);*/
 	/*color:white;*/
-	font-size: 24px;
+	font-size: 20px;
 	
-	line-height: 36px;
+	line-height: 30px;
 }
 
 body {
@@ -85,18 +89,12 @@ article a, article a:hover, article a:visited {
 	color: black;
 }
 
-/*FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER*/
-/*text color*/
-.footer-container footer {
-	color: black;
-}
-
 /*footer email link*/
 .footer-container a:link {
-	color: black;
+	color: #555555;
 }/* unvisited link */
 .footer-container a:visited {
-	color: #dddddd;
+	color: #555555;
 }/* visited link */
 .footer-container a:hover {
 	color: #dddddd;
@@ -108,6 +106,9 @@ article a, article a:hover, article a:visited {
 /*OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------*/
 hr {
 	border-top: 1px solid #DCEEFF;
+}
+footer hr{
+	border-top: 1px solid #555555;
 }
 .goog-te-gadget-simple {
 	background-color: #42335E !important;

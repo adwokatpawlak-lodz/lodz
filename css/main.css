@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    min-width:300px;
 }
 
 ::-moz-selection {
@@ -64,7 +65,7 @@ textarea {
 
 .wrapper {
     min-width: 650px;
-    width:50%;
+    width:49%;
 }
 
 /*small variant*/
@@ -123,12 +124,12 @@ nav a:hover {
 
 
 .footer-container footer {
-    padding: 20px 0;
+    padding: 20px;
+    color:#555555;
+    text-align:center;
 }
 .footer-container
 {
-	position:absolute;
-	bottom:0;
 	width: 100%;
 }
 
@@ -165,7 +166,8 @@ small{
 	padding-right: 3em;
 }
 .title {
-	font-size:1.3em;
+	font-size:56px;
+	line-height: 85px;
 }
 
 #simpleLink
@@ -196,12 +198,12 @@ small{
 
 		width: 100%;
 		text-align: center;
-				transition: background-color 200ms;
-		-webkit-transition: background-color 200ms;
+		transition: background-color 300ms;
+		-webkit-transition: background-color 300ms;
 	}
 		div.floating-menu li:hover
 	{
-		background-color:rgba(255,255,255,0.3);
+		background-color:#252525;
 	}
 	
 	div.floating-menu ul{
@@ -216,6 +218,12 @@ small{
 		padding:10px;
 		color:white;
 		
+		transition: color 300ms;
+		-webkit-transition: color 300ms;
+	}
+	
+	.floating-menu a:hover{
+		color:white;
 	}
 	/*scroll menu :hover animations*/
 	div.floating-menu li {
@@ -233,10 +241,8 @@ small{
 	/*div.floating-menu li:hover{
 		border-bottom: 2px solid #ffffff;
 	}*/
-	/*div.floating-menu a:hover{
-		color:white;
-	}
-	*/
+
+	
 
 	
 
@@ -249,20 +255,17 @@ article section
 	margin-top:0px;
 }
 
-h1
+/*h1
 {
 	margin-left:2%;
 	margin-right:2%;
-}
+}*/
 
-.header-container
-{
-	margin-top:550px;
-	margin-bottom:400px;
-}
 .main-container{
+	margin-top:400px;
 	margin-bottom:200px;
 }
+
 header
 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -283,41 +286,60 @@ body{
    =========================*/
 
 @media screen and (min-width: 1010px) {
-	
+	.main article h1 {
+			    text-align: left;
+	}
+
   	div.floating-menu {
 		position: fixed;
-		left: 0;
+		/*left: 0;*/
 		
 		width:auto;
+		padding-top:50px;
+		padding-bottom:30px;
+		
+		min-width: 610px;
+    	width:47%;
 		
 		/*border-bottom: 2px solid white;*/
 	}
-	
 
 /*scroll menu*/
 	div.floating-menu li {
-		position:relative;
-		float:right;
+		position:static;
+		float:left;
 
 		display: block;
-		padding-right:5px;
-		padding-left:5px;
-		
-
+		padding-right:23px;
+		padding-left:23px;
 
 		font-weight:bold;
 /*background-color:rgba(0,0,0, 0.5);*/
 border-bottom:none;
-border-left: 1px solid #cccccc;
+border-left: 1px solid #666666;
 
 		width:auto;
 		text-align:right;
+		
 
 }
+
+		div.floating-menu li:hover
+	{
+		background-color:black;
+	}
+	
+.centerList{
+			margin-left:auto;
+		margin-right:auto;
+	}
+    div.floating-menu li:first-child {
+        border-left: none;
+    }
 	
 	div.floating-menu a{
-		font-size: 20px;
-		color:white;
+		font-size: 17px;
+		color:#cccccc;
 		
 	}
 	
@@ -340,9 +362,10 @@ border-left: 1px solid #cccccc;
 
 	.title {
         float: left;
+        margin-top:200px;
     }
     
-    nav {
+    /*nav {
         float: right;
         width: 100%;/*38%*/
     }
@@ -367,7 +390,7 @@ border-left: 1px solid #cccccc;
     nav li:last-child a {
         margin-right: 0;
     }
-    
+    */
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -406,7 +429,7 @@ border-left: 1px solid #cccccc;
 	display:block;
 	/*width:86%;*/
 
-	margin-right:140px;
+	/*margin-right:140px;*/
 }
 
 .header-container article{
