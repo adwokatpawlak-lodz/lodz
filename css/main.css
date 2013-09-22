@@ -57,14 +57,24 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
+/*body {
     font: 16px/26px ff-tisa-web-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
     
-}
+}*/
 
 .wrapper {
+    min-width: 650px;
+    width:50%;
+}
+
+/*small variant*/
+@media screen and (max-width: 1010px) { 
+.wrapper {
     width: 90%;
+    min-width:0;
     margin: 0 5%;
+}
+
 }
 
 /* ==============
@@ -103,6 +113,7 @@ nav a:hover {
     font-size: 52px;
     font-weight:normal;
     line-height: 50px;
+    text-align: center;
 }
 
 .main aside {
@@ -176,7 +187,7 @@ small{
 		width: 100%;
 		position: fixed;
 		top:0px;
-		background-color: rgba(0,0,0, 1.0);	
+		background-color: black;	
 		z-index: 100;
 	}
 	div.floating-menu li {
@@ -185,7 +196,14 @@ small{
 
 		width: 100%;
 		text-align: center;
+				transition: background-color 200ms;
+		-webkit-transition: background-color 200ms;
 	}
+		div.floating-menu li:hover
+	{
+		background-color:rgba(255,255,255,0.3);
+	}
+	
 	div.floating-menu ul{
 		padding: 0;
 		margin:0;
@@ -196,28 +214,29 @@ small{
 		text-decoration:none;
 		display:block;/*to cover all li surface*/
 		padding:10px;
+		color:white;
+		
 	}
 	/*scroll menu :hover animations*/
 	div.floating-menu li {
 		border-bottom: 2px solid #cccccc;
 		
-		transition: border-bottom 500ms;
-		-webkit-transition: border-bottom 500ms;
+		/*transition: border-bottom 500ms;
+		-webkit-transition: border-bottom 500ms;*/
 	}
 	div.floating-menu a{
-		color:#cccccc;
 		
-		transition: border-bottom 500ms;
-		-webkit-transition: border-bottom 500ms;
+		/*transition: border-bottom 500ms;
+		-webkit-transition: border-bottom 500ms;*/
 	}
 	
-	div.floating-menu li:hover{
+	/*div.floating-menu li:hover{
 		border-bottom: 2px solid #ffffff;
-	}
-	div.floating-menu a:hover{
+	}*/
+	/*div.floating-menu a:hover{
 		color:white;
 	}
-	
+	*/
 
 	
 
@@ -258,6 +277,60 @@ body{
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+/* =========================
+   Large variant media query
+   =========================*/
+
+@media screen and (min-width: 1010px) {
+	
+  	div.floating-menu {
+		position: fixed;
+		left: 0;
+		
+		width:auto;
+		
+		/*border-bottom: 2px solid white;*/
+	}
+	
+
+/*scroll menu*/
+	div.floating-menu li {
+		position:relative;
+		float:right;
+
+		display: block;
+		padding-right:5px;
+		padding-left:5px;
+		
+
+
+		font-weight:bold;
+/*background-color:rgba(0,0,0, 0.5);*/
+border-bottom:none;
+border-left: 1px solid #cccccc;
+
+		width:auto;
+		text-align:right;
+
+}
+	
+	div.floating-menu a{
+		font-size: 20px;
+		color:white;
+		
+	}
+	
+
+	/*div.floating-menu .active {
+		border-bottom: 2px solid #ffffff;
+	}
+	
+	div.floating-menu  .active a {
+		color:white;
+	}*/
+	
+}
 
 @media only screen and (min-width: 480px) {
 
@@ -319,52 +392,12 @@ body{
 /* ============
     WIDE: Main
    ============ */
-  	div.floating-menu {
-  		background-color:rgba(0,0,0, 0.0);
-		position: fixed;
-		right: 0;
-		
-		width: 160px;
-	}
-	
-
-/*scroll menu*/
-	div.floating-menu li {
-		position:relative;
-
-		display: block;
-		padding:15px;
-		padding-top:35px;
-
-		width:110px;
-		text-align:right;
-		
-		transition: right 200ms;
-		-webkit-transition: right 200ms;
-	}
-	
-	div.floating-menu li:hover
-	{
-		right:10px;
-	}
-	
-	div.floating-menu .active {
-		border-bottom: 2px solid #ffffff;
-	}
-	
-	div.floating-menu  .active a {
-		color:white;
-	}
-
-
-
-
 
     .main article {    	
     	/*margin-left:auto;
     	margin-right:auto;*/
     	/*width: 80%;*/
-    	margin-right:140px;
+    	/*margin-right:140px;*/
     	        /*float: left;
         width: 57%;*/
     }
@@ -382,18 +415,6 @@ body{
 	margin:0;
 }
 
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
