@@ -262,7 +262,7 @@ article section
 }*/
 
 .main-container{
-	margin-top:400px;
+	margin-top:200px;
 	margin-bottom:200px;
 }
 
@@ -310,8 +310,8 @@ body{
 		float:left;
 
 		display: block;
-		padding-right:23px;
-		padding-left:23px;
+		padding-right:15px;
+		padding-left:15px;
 
 		font-weight:bold;
 /*background-color:rgba(0,0,0, 0.5);*/
@@ -362,7 +362,7 @@ border-left: 1px solid #666666;
 
 	.title {
         float: left;
-        margin-top:200px;
+        /*margin-top:200px;*/
     }
     
     /*nav {
