@@ -36,6 +36,11 @@ img {
     vertical-align: middle;
 }
 
+.aboutImage
+{
+	float:left;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -268,7 +273,7 @@ article section
 
 header
 {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: Tahoma, Geneva, sans-serif;
 	/*font-weight: bold;*/
 	text-align:center;
 	line-height: 1.5em;
