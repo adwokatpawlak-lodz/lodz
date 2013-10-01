@@ -270,17 +270,20 @@ article section
 
 .main-container{
 	margin-top:200px;
-	margin-bottom:200px;
+	/*margin-bottom:200px;*/
 }
 
 header
 {
 	font-family: Tahoma, Geneva, sans-serif;
 	/*font-weight: bold;*/
-	text-align:center;
+
 	line-height: 1.5em;
 	font-size: 2.5em;
 }
+.title{
+		text-align:center;
+		}
 body{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
