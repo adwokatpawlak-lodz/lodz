@@ -259,6 +259,8 @@ small{
 
 article section
 {
+	text-align: justify;
+	
 	width: 90%;
 	padding: 3%;
 	margin: 0 2%;
