@@ -38,9 +38,12 @@ img {
 
 .aboutImage
 {
-	float:left;
+	/*float:left;
 	margin-top:5px;
-	margin-right:5px;
+	margin-right:5px;*/
+	display:block;
+	margin-right: auto;
+	margin-left:auto;
 }
 
 fieldset {
