@@ -197,7 +197,7 @@ small{
   	div.floating-menu {
 		padding-top:0px;
 		width: 100%;
-		position: fixed;
+		/*position: fixed;*/
 		top:0px;
 		background-color: black;	
 		z-index: 100;
