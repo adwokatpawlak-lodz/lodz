@@ -1,100 +1,122 @@
-/*NAVIGATION------NAVIGATION------NAVIGATION------NAVIGATION------NAVIGATION------NAVIGATION------NAVIGATION------*/
-/*text color*/
-.title {
-    color: #DCEEFF;
-}
-/*background color*/
-/*.header-container {
-    background: #BCAFE8;
-}*//*A196C7*/
-/*border color (tetriary color)*/
-/*.header-container {
-    border-bottom: 20px solid #6E4778;
-}*/
-/*navigation links*/
-/*nav .first{
-	background:#432E68;
-}
-nav .second{
-	background:#432E68;
-}
-nav .third{
-	background:#432E68;
-}*/
-
-nav a,
-nav a:hover,
-nav a:visited {
-    color: #DCEEFF;/*#FFC64C;*/
-}
-
 /*MAIN------MAIN------MAIN------MAIN------MAIN------MAIN------MAIN------MAIN------MAIN------MAIN------MAIN*/
-/*text color*/
-article h2{
-	color:#BB32FF;/*B06E97 96585C 42335E */
-	/*font-weight: normal;*/
+article h2 {
+	font-size: 1em;
 	font-family: freight-sans-pro, 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
-article{
-	color:#DCEEFF;
+
+.bg {
+  /* Set rules to fill background */
+  min-width: 1290px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  z-index: -1;
 }
-/*background color*/
-/*body{
-	background:#f6ffcc;
-}*/
-.body-home{
-	background:#20192E;/*tu tu tu tu tu tu tu tu tu tu tu tu tu tu tu tu tu tu*/
-}/*BCAFE8 554F68 6C5E87*/
-.body-portfolio{
-	background:#e9ffff;
+
+	
+@media screen and (max-width: 1290px) { /* Specific to this particular image */
+  img.bg {
+    /*left: 50%;
+    margin-left: -645px; */  /* 50% */
+  }
 }
-.body-work{
-	background:#fff4f3;
+
+/*small variant*/
+@media screen and (max-width: 1010px) { /* Specific to this particular image */
+  img.bg {
+    left:auto;
+    right:0;
+  }
+  
+  .main-container{
+	background-color: rgba(0, 0, 0, 0.89);
+	}
+
+	.footer-container{
+		/*background-color:#27273D;*/
+		color:white;
+	}
 }
+
+article section{
+	/*background-color: rgba(0,0,0, 1.0);*/
+	/*color:white;*/
+	font-size: 20px;
+	
+	line-height: 30px;
+}
+
+body {
+	color: #ffffff;
+}
+.title
+{
+	color:white;
+}
+a:active
+{
+outline: none;
+}
+
+a:focus
+{
+-moz-outline-style: none;
+}
+a::-moz-focus-inner{
+  border: 0;
+  border-style: none;
+  border-width: 0px;
+}
+
+
+body {
+	background: black;
+}
+article a, article a:hover, article a:visited {
+	color: white;
+}
+
+
 /*ASIDE---------ASIDE---------ASIDE---------ASIDE---------ASIDE---------ASIDE---------ASIDE---------ASIDE---------*/
 /*text color*/
 .main aside {
-    color: black;
-   }
-/*background color*/
-/*.main aside {
-    background: #855691;
-}*/
-/*border color (tetriary color)*/
-/*.main aside {
-    border-top: 20px solid #6E4778;
-}*/
+	color: black;
+}
 
-   
-/*FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER------FOOTER*/
-/*text color*/
-.footer-container footer {color: black;}
-/*background color*/
-/*.footer-container {
-    background: #855691;
-}*/
-/*border color (tetriary color)*/
-/*.footer-container {
-    border-top: 20px solid #6E4778;
-}*/
 /*footer email link*/
-.footer-container a:link {color:black;}      /* unvisited link */
-.footer-container a:visited {color:#dddddd;}  /* visited link */
-.footer-container a:hover {color:#dddddd;}  /* mouse over link */
-.footer-container a:active {color:#bbbbbb;}  /* selected link */
-
+.footer-container a:link {
+	color: #555555;
+}/* unvisited link */
+.footer-container a:visited {
+	color: #555555;
+}/* visited link */
+.footer-container a:hover {
+	color: #dddddd;
+}/* mouse over link */
+.footer-container a:active {
+	color: #bbbbbb;
+}/* selected link */
 
 /*OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------OTHER--------*/
 hr {
-    border-top: 1px solid #DCEEFF;
+	border-top: 1px solid #DCEEFF;
 }
-.goog-te-gadget-simple
-{
-	background-color:#42335E !important;
+footer hr{
+	border-top: 1px solid #555555;
+}
+.goog-te-gadget-simple {
+	background-color: #42335E !important;
 }
 ::selection {
-    background: #b3d4fc;
-   }
+	background: #b3d4fc;
+}
 ::-moz-selection {
-    background: #b3d4fc;
-   }
+	background: #b3d4fc;
+}
